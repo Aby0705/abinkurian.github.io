@@ -1,1 +1,551 @@
-<!-- This site is protected. Unauthorized copying of this code is prohibited. Build your own at claude.ai --><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Abin Kurian — IT Associate Manager</title><style>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:#F5F5F7;color:#1d1d1f;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Helvetica Neue',Arial,sans-serif;font-weight:400;overflow-x:hidden;cursor:none;-webkit-font-smoothing:antialiased}@media(hover:none){body{cursor:auto}#cur,#cur-ring{display:none}}.graph-bg{position:fixed;inset:0;z-index:0;pointer-events:none;background-color:#F5F5F7;background-image:linear-gradient(rgba(0,0,0,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.05) 1px,transparent 1px),linear-gradient(rgba(0,0,0,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.02) 1px,transparent 1px);background-size:60px 60px,60px 60px,12px 12px,12px 12px}#blob-svg{position:fixed;pointer-events:none;z-index:1;width:600px;height:600px;transform:translate(-50%,-50%);transition:none;opacity:.75}#blob-svg path{fill:url(#blobGrad);filter:blur(2px)}#cur{position:fixed;width:8px;height:8px;background:#1d1d1f;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%)}#cur-ring{position:fixed;width:30px;height:30px;border:1.5px solid rgba(0,0,0,.2);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s}#intro{position:fixed;inset:0;z-index:9000;background:#F5F5F7;display:flex;align-items:center;justify-content:center;overflow:hidden}.ip{position:absolute;left:0;right:0;background:#F5F5F7;transition:height .75s cubic-bezier(.77,0,.18,1)}#ip-t{top:0;height:50%}#ip-b{bottom:0;height:50%}#intro.exit #ip-t{height:0}#intro.exit #ip-b{height:0}#intro.gone{display:none}.iname{position:relative;z-index:2;text-align:center}.iw{display:block;overflow:hidden;font-size:clamp(60px,11vw,148px);font-weight:700;letter-spacing:-.04em;line-height:.88;color:#1d1d1f}.iw span{display:block;transform:translateY(110%);transition:transform .85s cubic-bezier(.16,1,.3,1)}.iw.up span{transform:translateY(0)}.iw:nth-child(2) span{transition-delay:.07s}.isub{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#6e6e73;margin-top:20px;opacity:0;transition:opacity .6s ease .9s}.isub.up{opacity:1}.layout{opacity:0;transition:opacity .7s ease;position:relative;z-index:2}.layout.show{opacity:1}.sidebar{position:fixed;left:0;top:0;bottom:0;width:220px;display:flex;flex-direction:column;padding:32px 24px;border-right:1px solid rgba(0,0,0,.08);z-index:100;background:rgba(245,245,247,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}.s-logo{font-size:15px;font-weight:700;letter-spacing:.02em;color:#1d1d1f;text-decoration:none;margin-bottom:40px;display:block}.s-logo b{color:#6366f1}.s-lbl{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#86868b;margin-bottom:10px}.s-soc{display:flex;flex-direction:column;gap:4px;margin-bottom:32px}.s-soc a{font-size:12px;color:#6e6e73;text-decoration:none;display:flex;align-items:center;gap:8px;padding:5px 8px;border-radius:6px;transition:color .2s,background .2s,padding-left .25s}.s-soc a:hover{color:#1d1d1f;background:rgba(0,0,0,.04);padding-left:13px}.s-soc svg{width:13px;height:13px;fill:currentColor;flex-shrink:0}.s-nav{display:flex;flex-direction:column;gap:2px;flex:1}.s-nav a{font-size:13px;font-weight:500;color:#6e6e73;text-decoration:none;padding:9px 10px;border-radius:8px;transition:color .2s,background .2s}.s-nav a:hover,.s-nav a.active{color:#1d1d1f;background:rgba(0,0,0,.05)}.s-nav a.active{font-weight:600}.s-email{margin-top:auto;padding-top:16px;border-top:1px solid rgba(0,0,0,.07);font-size:11px;color:#86868b}.s-email a{color:#86868b;text-decoration:none;transition:color .2s}.s-email a:hover{color:#6366f1}.mob-nav{display:none;position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(245,245,247,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:0 20px;height:56px;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(0,0,0,.08)}.mob-logo{font-size:15px;font-weight:700;color:#1d1d1f;text-decoration:none}.mob-logo b{color:#6366f1}.mob-menu-btn{width:36px;height:36px;background:none;border:1px solid rgba(0,0,0,.12);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer}.mob-menu-btn span{width:16px;height:1.5px;background:#1d1d1f;display:block;transition:all .3s}.mob-menu-btn.open span:nth-child(1){transform:rotate(45deg) translate(4.5px,4.5px)}.mob-menu-btn.open span:nth-child(2){opacity:0}.mob-menu-btn.open span:nth-child(3){transform:rotate(-45deg) translate(4.5px,-4.5px)}.mob-drawer{display:none;position:fixed;top:56px;left:0;right:0;bottom:0;z-index:199;background:rgba(245,245,247,.98);backdrop-filter:blur(20px);flex-direction:column;padding:32px 28px;overflow-y:auto}.mob-drawer.open{display:flex}.mob-drawer nav{display:flex;flex-direction:column;gap:4px;margin-bottom:36px}.mob-drawer nav a{font-size:18px;font-weight:600;color:#6e6e73;text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,0,0,.06);transition:color .2s}.mob-drawer nav a:hover,.mob-drawer nav a.active{color:#1d1d1f}.mob-soc{display:flex;gap:14px;margin-top:auto}.mob-soc a{font-size:13px;color:#6e6e73;text-decoration:none;padding:8px 14px;border:1px solid rgba(0,0,0,.1);border-radius:100px;transition:all .2s}.mob-soc a:hover{color:#6366f1;border-color:#6366f1}.main{margin-left:220px;min-height:100vh}#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:80px 72px;border-bottom:1px solid rgba(0,0,0,.08);position:relative;overflow:hidden}.hero-tag{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#86868b;margin-bottom:20px;display:flex;align-items:center;gap:12px}.hero-tag::before{content:'';width:18px;height:1px;background:#86868b}.hero-h{font-size:clamp(44px,5.8vw,88px);font-weight:700;line-height:.92;letter-spacing:-.04em;color:#1d1d1f;margin-bottom:20px}.hero-h .ln{display:block;overflow:hidden}.hero-h .ln span{display:block;transform:translateY(100%);transition:transform .9s cubic-bezier(.16,1,.3,1)}.hero-h .ln:nth-child(2) span{transition-delay:.08s}.hero-h.go .ln span{transform:translateY(0)}.hero-h .vt{color:#6366f1}.hero-role{font-size:clamp(18px,2.8vw,32px);font-weight:600;letter-spacing:-.02em;color:#6366f1;margin-bottom:28px;min-height:1.4em}.hero-p{font-size:16px;color:#6e6e73;line-height:1.75;max-width:480px;margin-bottom:36px}.hero-stats{display:flex;gap:40px;margin-bottom:40px;flex-wrap:wrap}.hs-n{font-size:28px;font-weight:700;color:#1d1d1f;letter-spacing:-.02em}.hs-l{font-size:11px;color:#86868b;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}.hero-btn{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;letter-spacing:-.01em;color:#fff;background:#1d1d1f;padding:14px 26px;text-decoration:none;border-radius:100px;transition:background .25s,gap .25s,transform .2s;width:fit-content}.hero-btn:hover{background:#6366f1;gap:16px;transform:translateY(-1px)}.sec{padding:88px 72px;border-bottom:1px solid rgba(0,0,0,.08);position:relative}.sec-ey{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#86868b;margin-bottom:12px;display:flex;align-items:center;gap:10px}.sec-ey::before{content:'';width:16px;height:1px;background:#86868b}.sec-h{font-size:clamp(24px,3.5vw,46px);font-weight:700;letter-spacing:-.025em;line-height:1.05;color:#1d1d1f;margin-bottom:48px}.sec-h em{font-style:italic;color:#86868b;font-weight:400}#about{background:rgba(255,255,255,.7)}.about-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:start}.apq{font-size:clamp(15px,1.8vw,20px);font-weight:600;line-height:1.55;color:#1d1d1f;border-left:2px solid #6366f1;padding-left:20px;margin-bottom:24px}.ab{font-size:14.5px;color:#6e6e73;line-height:1.9}.ab p+p{margin-top:14px}.edu-t{display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:9px 14px;border-radius:8px;border:1px solid rgba(0,0,0,.1);font-size:12px;color:#1d1d1f;background:#fff}.edu-t::before{content:'◆';color:#6366f1;font-size:7px}.daily-h{font-size:clamp(16px,1.8vw,22px);font-weight:700;letter-spacing:-.01em;margin-bottom:18px;color:#1d1d1f}.daily-list{list-style:none;display:flex;flex-direction:column;gap:10px}.daily-list li{font-size:13.5px;color:#6e6e73;display:flex;gap:10px;align-items:flex-start;line-height:1.7}.daily-list li span{color:#6366f1;flex-shrink:0}#experience{background:rgba(245,245,247,.9)}.exp-list{display:flex;flex-direction:column}.ei{display:grid;grid-template-columns:170px minmax(0,1fr);gap:36px;padding:32px 0;border-top:1px solid rgba(0,0,0,.08);align-items:start;transition:padding-left .25s}.ei:last-child{border-bottom:1px solid rgba(0,0,0,.08)}.ei:hover{padding-left:6px}.ei-co{font-size:14px;font-weight:700;color:#1d1d1f;margin-bottom:4px}.ei-per{font-size:10px;letter-spacing:.1em;color:#6366f1;text-transform:uppercase}.ei-role{font-size:18px;font-weight:700;color:#1d1d1f;margin-bottom:8px;letter-spacing:-.01em}.ei-desc{font-size:13.5px;color:#6e6e73;line-height:1.85}#projects{background:rgba(255,255,255,.7)}.pj-list{display:flex;flex-direction:column}.pj{display:grid;grid-template-columns:60px minmax(0,1fr);gap:28px;padding:36px 0;border-top:1px solid rgba(0,0,0,.08);transition:padding-left .25s;cursor:pointer}.pj:last-child{border-bottom:1px solid rgba(0,0,0,.08)}.pj:hover{padding-left:6px}.pj:hover .pj-title{color:#6366f1}.pj-num{font-size:38px;font-weight:700;color:rgba(0,0,0,.08);line-height:1;transition:color .3s;letter-spacing:-.03em}.pj:hover .pj-num{color:rgba(99,102,241,.22)}.pj-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:9px}.pt{font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:100px;border:1px solid rgba(0,0,0,.1);color:#86868b;background:#fff;transition:all .25s}.pj:hover .pt{border-color:rgba(99,102,241,.4);color:#6366f1;background:rgba(99,102,241,.05)}.pj-title{font-size:clamp(15px,1.9vw,21px);font-weight:700;color:#1d1d1f;margin-bottom:8px;transition:color .25s;letter-spacing:-.015em}.pj-desc{font-size:13.5px;color:#6e6e73;line-height:1.85;margin-bottom:9px;max-width:540px}.pj-stack{font-size:11px;color:#86868b;letter-spacing:.04em}#skills{background:transparent;padding:0;position:relative}.skills-wrap{position:relative}.skill-card-stack{position:sticky;top:0;min-height:100vh;display:grid;grid-template-columns:220px minmax(0,1fr);overflow:hidden;box-shadow:0 -8px 48px rgba(0,0,0,.1)}.skill-card-stack:nth-child(1){z-index:10;background:#EFEFEF}.skill-card-stack:nth-child(2){z-index:20;background:#E8E8EA}.skill-card-stack:nth-child(3){z-index:30;background:#E2E2E4}.skills-spacer{height:100vh}.scs-left{display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 64px 72px;border-right:1px solid rgba(0,0,0,.09)}.scs-other{display:flex;flex-direction:column;gap:0;margin-bottom:16px}.scs-other-title{font-size:clamp(12px,1.4vw,17px);font-weight:600;letter-spacing:-.01em;color:rgba(0,0,0,.25);line-height:1.2;border-top:1px solid rgba(0,0,0,.08);padding:12px 0}.scs-num{font-size:clamp(28px,4vw,54px);font-weight:700;letter-spacing:-.03em;color:#1d1d1f;line-height:1}.scs-right{display:flex;flex-direction:column;justify-content:center;padding:80px 72px}.sp-label{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#86868b;margin-bottom:16px}.sp-title{font-size:clamp(30px,4.5vw,62px);font-weight:700;letter-spacing:-.035em;line-height:1;color:#1d1d1f;margin-bottom:26px}.sp-desc{font-size:15px;color:#6e6e73;line-height:1.85;max-width:500px;margin-bottom:36px}.sp-items{display:flex;flex-direction:column;gap:0}.sp-item{display:flex;align-items:baseline;gap:20px;padding:16px 0;border-bottom:1px solid rgba(0,0,0,.08)}.sp-item:first-child{border-top:1px solid rgba(0,0,0,.08)}.sp-item-n{font-size:11px;color:#86868b;letter-spacing:.1em;min-width:22px;font-weight:500}.sp-item-text{font-size:clamp(15px,2vw,22px);font-weight:600;color:#1d1d1f;letter-spacing:-.01em}#resume-section{background:rgba(255,255,255,.8);padding:80px 72px;border-top:1px solid rgba(0,0,0,.08);border-bottom:1px solid rgba(0,0,0,.08);position:relative;z-index:40}.resume-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}.resume-text h2{font-size:clamp(22px,3vw,40px);font-weight:700;letter-spacing:-.025em;color:#1d1d1f;margin-bottom:8px}.resume-text p{font-size:14px;color:#6e6e73;line-height:1.7;max-width:420px}.resume-dl-btn{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;letter-spacing:-.01em;color:#fff;background:#1d1d1f;padding:16px 32px;text-decoration:none;border-radius:100px;transition:background .25s,gap .25s,transform .2s;white-space:nowrap;flex-shrink:0}.resume-dl-btn:hover{background:#6366f1;gap:14px;transform:translateY(-1px)}.resume-dl-btn svg{width:16px;height:16px;fill:currentColor;flex-shrink:0}#contact{background:rgba(255,255,255,.7);position:relative;z-index:40}.ct-big{font-size:clamp(18px,3.2vw,50px);font-weight:700;letter-spacing:-.03em;line-height:1.1;margin-bottom:36px;overflow-wrap:break-word;word-break:break-word}.ct-big a{color:#6366f1;text-decoration:none;border-bottom:2px solid rgba(99,102,241,.22);transition:border-color .25s;font-size:clamp(14px,2.6vw,42px)}.ct-big a:hover{border-color:#6366f1}.ct-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:40px}.cl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#86868b;margin-bottom:7px}.cv{font-size:14px;color:#1d1d1f}.clink{font-size:14px;color:#6e6e73;text-decoration:none;display:block;transition:color .2s,padding-left .2s;margin-bottom:4px;padding:3px 0}.clink:hover{color:#6366f1;padding-left:5px}.ft{margin-top:48px;padding-top:22px;border-top:1px solid rgba(0,0,0,.08);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:11px;color:#86868b;letter-spacing:.04em}.ft a{color:#86868b;text-decoration:none}.ft a:hover{color:#6366f1}.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}.rv.in{opacity:1;transform:translateY(0)}.d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}.d5{transition-delay:.35s}.d6{transition-delay:.42s}@media(max-width:768px){body{cursor:auto}.sidebar{display:none}.mob-nav{display:flex}.main{margin-left:0;padding-top:56px}#hero{padding:52px 24px 64px;min-height:calc(100vh - 56px)}.hero-tag{margin-top:8px}.sec{padding:64px 24px}#contact{padding:64px 24px}.about-grid{grid-template-columns:1fr;gap:36px}.ct-grid{grid-template-columns:1fr 1fr;gap:20px}.ct-grid>div:first-child{grid-column:1/-1}.ei{grid-template-columns:1fr;gap:6px;padding:28px 0}.pj{grid-template-columns:1fr;gap:8px;padding:28px 0}.pj-num{font-size:28px}.skill-card-stack{position:relative;min-height:auto;grid-template-columns:1fr;box-shadow:none;border-bottom:1px solid rgba(0,0,0,.08)}.scs-left{display:none}.scs-right{padding:56px 24px}.skills-spacer{display:none}#resume-section{padding:56px 24px}.resume-inner{flex-direction:column;align-items:flex-start}}@media(max-width:480px){.hero-stats{gap:24px}.ct-grid{grid-template-columns:1fr}.hero-h{font-size:clamp(40px,12vw,72px)}}</style></head><body><svg id="blob-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="position:fixed;pointer-events:none;z-index:1;width:600px;height:600px;transform:translate(-50%,-50%);left:50%;top:50%"><defs><radialGradient id="blobGrad" cx="50%" cy="50%" r="50%"><stop offset="0%"   stop-color="rgba(99,102,241,0.22)"/><stop offset="45%"  stop-color="rgba(139,92,246,0.14)"/><stop offset="100%" stop-color="rgba(99,102,241,0)"/></radialGradient></defs><path id="blob-path" fill="url(#blobGrad)"/></svg><div id="cur"></div><div id="cur-ring"></div><div id="intro"><div class="ip" id="ip-t"></div><div class="ip" id="ip-b"></div><div class="iname"><span class="iw" id="iw1"><span>ABIN</span></span><span class="iw" id="iw2"><span>KURIAN</span></span><p class="isub" id="isub">IT Associate Manager · Mumbai</p></div></div><div class="layout" id="layout"><nav class="mob-nav" id="mobNav"><a href="#" class="mob-logo">AK<b>.</b></a><button class="mob-menu-btn" id="mobMenuBtn" onclick="toggleMobMenu()"><span></span><span></span><span></span></button></nav><div class="mob-drawer" id="mobDrawer"><nav><a href="#hero"       class="active"  onclick="goTo('hero');closeMobMenu();return false">Home</a><a href="#about"                       onclick="goTo('about');closeMobMenu();return false">About Me</a><a href="#experience"                  onclick="goTo('experience');closeMobMenu();return false">Experience</a><a href="#projects"                    onclick="goTo('projects');closeMobMenu();return false">Projects</a><a href="#skills"                      onclick="goTo('skills');closeMobMenu();return false">Skills</a><a href="#contact"                     onclick="goTo('contact');closeMobMenu();return false">Contact</a></nav><div class="mob-soc"><a href="https://github.com/Aby0705" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/abin-kurian/" target="_blank">LinkedIn</a><a href="mailto:abin.kuriachan1@gmail.com">Email</a></div></div><aside class="sidebar"><a href="#" class="s-logo">AK<b>.</b></a><p class="s-lbl">Social</p><div class="s-soc"><a href="https://github.com/Aby0705" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.49.5.09.682-.218.682-.484 0-.236-.009-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.16 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg><span>github</span></a><a href="https://www.linkedin.com/in/abin-kurian/" target="_blank"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><span>linkedin</span></a><a href="mailto:abin.kuriachan1@gmail.com"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><span>email</span></a></div><nav class="s-nav"><a href="#hero"       class="active" onclick="goTo('hero');return false">Home</a><a href="#about"                      onclick="goTo('about');return false">About Me</a><a href="#experience"                 onclick="goTo('experience');return false">Experience</a><a href="#projects"                   onclick="goTo('projects');return false">Projects</a><a href="#skills"                     onclick="goTo('skills');return false">Skills</a></nav><div class="s-email"><a href="mailto:abin.kuriachan1@gmail.com">abin.kuriachan1@gmail.com</a></div></aside><main class="main"><section id="hero"><p class="hero-tag">IT Associate Manager · Mumbai, India</p><h1 class="hero-h" id="heroH"><span class="ln"><span>ABIN</span></span><span class="ln"><span>KURIAN<span class="vt">.</span></span></span></h1><div class="hero-role" id="heroRole">IT Associate Manager</div><p class="hero-p rv d1">IT infrastructure professional keeping BFSI trading systems running and secure at Shreni Shares — building detection tools that catch threats before they become incidents.</p><div class="hero-stats rv d2"><div><div class="hs-n">9.08</div><div class="hs-l">CGPA</div></div><div><div class="hs-n">4+</div><div class="hs-l">Projects</div></div><div><div class="hs-n">01</div><div class="hs-l">Research Paper</div></div></div><a href="#contact" class="hero-btn rv d3" onclick="goTo('contact');return false">Get in Touch →</a></section><section id="about" class="sec"><p class="sec-ey rv">About Me</p><div class="about-grid"><div><blockquote class="apq rv d1">"Security isn't a feature — it's the foundation every system should be built on."</blockquote><div class="ab rv d2"><p>Based in Mumbai, I work as IT Associate Manager at Shreni Shares Limited — a SEBI/NSE/BSE regulated brokerage where uptime is non-negotiable. My day begins with BOD system checks and ends with EOD validation, keeping live trading infrastructure healthy.</p><p>Beyond operations, I build security detection tooling — Python intrusion scripts, Splunk dashboards and SIEM rules engineered to catch threats. I published a national research paper on Cloud Computing security at Wilson College.</p></div><div class="edu-t rv d3">B.Sc. IT · Wilson College, Mumbai · CGPA 9.08 / 10</div></div><div class="rv d2"><p class="daily-h">What I do every day</p><ul class="daily-list"><li><span>→</span>L1 &amp; L2 IT support for trading workstations in live market hours</li><li><span>→</span>BOD/EOD system health checks and readiness validation</li><li><span>→</span>Active Directory, endpoint security and network operations</li><li><span>→</span>MoneyMaker trading platform administration</li><li><span>→</span>Building security detection scripts and Splunk dashboards</li></ul></div></div></section><section id="experience" class="sec"><p class="sec-ey rv">Career</p><h2 class="sec-h rv d1">My <em>Experience</em></h2><div class="exp-list"><a href="shreni.html" class="ei rv d2" style="text-decoration:none;color:inherit;display:grid"><div><div class="ei-co">Shreni Shares Ltd.</div><div class="ei-per">Jul 2025 – Present</div></div><div><div class="ei-role">IT Associate Manager<span style="font-size:11px;font-weight:400;color:#6366f1;margin-left:10px;letter-spacing:.04em">View details ↗</span></div><div class="ei-desc">L1 &amp; L2 support for trading workstations in SEBI/NSE/BSE regulated environment. BOD/EOD operations, MoneyMaker platform administration, Active Directory, endpoint security, vendor coordination.</div></div></a><a href="gracious.html" class="ei rv d3" style="text-decoration:none;color:inherit;display:grid"><div><div class="ei-co">Gracious Exports</div><div class="ei-per">Dec 2024 – Jun 2025</div></div><div><div class="ei-role">IT Support Associate<span style="font-size:11px;font-weight:400;color:#6366f1;margin-left:10px;letter-spacing:.04em">View details ↗</span></div><div class="ei-desc">First-level desktop, laptop and printer troubleshooting. MS Office and Outlook/IMAP/SMTP configuration. IT asset inventory tracking and vendor coordination for hardware repairs.</div></div></a><div class="ei rv d4"><div><div class="ei-co">Wilson College</div><div class="ei-per">2021 – 2024</div></div><div><div class="ei-role">B.Sc. Information Technology</div><div class="ei-desc">Graduated with CGPA 9.08/10. Published national research paper on Security and Privacy in Cloud Computing. Studied networking, OS, databases and software engineering.</div></div></div></div></section><section id="projects" class="sec"><p class="sec-ey rv">Work</p><h2 class="sec-h rv d1">Selected <em>Projects</em></h2><div class="pj-list"><div class="pj rv d2"><div class="pj-num">01</div><div><div class="pj-tags"><span class="pt">Splunk</span><span class="pt">Kali Linux</span><span class="pt">auth.log</span><span class="pt">SPL</span></div><div class="pj-title">SSH Brute-Force Detection in Splunk</div><div class="pj-desc">Simulated SSH brute-force attacks and engineered Splunk dashboards with threshold-based alerting. SPL queries with dynamic thresholds, time-window bucketing and IP geo-enrichment.</div><div class="pj-stack">Kali Linux · Nmap · Splunk · auth.log · SPL Queries</div></div></div><div class="pj rv d3"><div class="pj-num">02</div><div><div class="pj-tags"><span class="pt">Python</span><span class="pt">Bash</span><span class="pt">Splunk HEC</span><span class="pt">ELK</span></div><div class="pj-title">Custom Log-Based Intrusion Detection Script</div><div class="pj-desc">Python script parsing Linux auth logs in real time for brute-force patterns with configurable sliding-window thresholds, IP geolocation and optional iptables auto-blocking.</div><div class="pj-stack">Python · Bash · Splunk HEC · ELK Logstash · iptables</div></div></div><div class="pj rv d4"><div class="pj-num">03</div><div><div class="pj-tags"><span class="pt">Python</span><span class="pt">Splunk</span><span class="pt">F1 Score</span></div><div class="pj-title">Detection Rule Tuning &amp; False Positive Reduction</div><div class="pj-desc">Built SIEM detection rules then refined across 5 versions using Precision, Recall and F1 scoring. Achieved zero false positives while maintaining 100% attack detection.</div><div class="pj-stack">Python · Splunk / ELK · F1 Scoring · Exclusion Lists</div></div></div><div class="pj rv d5"><div class="pj-num">04</div><div><div class="pj-tags"><span class="pt">Python</span><span class="pt">Flask</span><span class="pt">SQLite</span><span class="pt">2FA</span></div><div class="pj-title">IT Asset &amp; Inventory Management Platform</div><div class="pj-desc">Full-stack web app for managing IT assets with role-based access (2FA TOTP), CSRF protection, rate limiting, comprehensive audit trail and exportable reports.</div><div class="pj-stack">Python · Flask · SQLite · WSGI · 2FA TOTP · Pandas Reports</div></div></div></div></section><section id="skills"><div class="skills-wrap"><div class="skill-card-stack"><div class="scs-left"><div class="scs-num">(01)</div></div><div class="scs-right"><p class="sp-label">IT Infrastructure &amp; Operations</p><h3 class="sp-title">Infrastructure<br>&amp; Support</h3><p class="sp-desc">Keeping critical systems healthy in a BFSI regulated environment where every minute of downtime has real consequences — from trading workstations to server rooms.</p><div class="sp-items"><div class="sp-item"><span class="sp-item-n">01</span><span class="sp-item-text">Windows Server, Active Directory &amp; Access Control</span></div><div class="sp-item"><span class="sp-item-n">02</span><span class="sp-item-text">LAN/WAN, DNS/DHCP, Proxy &amp; Network Config</span></div><div class="sp-item"><span class="sp-item-n">03</span><span class="sp-item-text">MS 365, Outlook/SMTP, cPanel, MoneyMaker</span></div></div></div></div><div class="skill-card-stack"><div class="scs-left"><div class="scs-other"><div class="scs-other-title">Infrastructure &amp; Support</div></div><div class="scs-num">(02)</div></div><div class="scs-right"><p class="sp-label">Security &amp; Detection Engineering</p><h3 class="sp-title">Security &amp;<br>Detection</h3><p class="sp-desc">Building tools that catch threats before they become incidents. I work both sides — simulating attacks in controlled labs and engineering the detection rules that catch them.</p><div class="sp-items"><div class="sp-item"><span class="sp-item-n">01</span><span class="sp-item-text">Splunk SPL, ELK Stack — dashboards &amp; alert rules</span></div><div class="sp-item"><span class="sp-item-n">02</span><span class="sp-item-text">Nmap, iptables, Endpoint Security, Firewall Monitoring</span></div><div class="sp-item"><span class="sp-item-n">03</span><span class="sp-item-text">MITRE ATT&amp;CK Mapping, SIEM Rule Tuning &amp; FP Reduction</span></div></div></div></div><div class="skill-card-stack"><div class="scs-left"><div class="scs-other"><div class="scs-other-title">Infrastructure &amp; Support</div><div class="scs-other-title">Security &amp; Detection</div></div><div class="scs-num">(03)</div></div><div class="scs-right"><p class="sp-label">Development &amp; Scripting</p><h3 class="sp-title">Development<br>&amp; Scripting</h3><p class="sp-desc">Building functional tools that solve real operational problems — from a Python IDS that auto-blocks attackers to a full-stack asset management platform with enterprise-grade security.</p><div class="sp-items"><div class="sp-item"><span class="sp-item-n">01</span><span class="sp-item-text">Python — Flask, Pandas, Scapy, regex, file I/O</span></div><div class="sp-item"><span class="sp-item-n">02</span><span class="sp-item-text">Bash Scripting, SQLite, REST API Integration</span></div><div class="sp-item"><span class="sp-item-n">03</span><span class="sp-item-text">WSGI Deployment, 2FA TOTP, CSRF, Rate Limiting</span></div></div></div></div><div class="skills-spacer"></div></div></section><section id="resume-section"><div class="resume-inner rv"><div class="resume-text"><h2>My Resume</h2><p>Download my full CV — experience, skills, education and projects in one place.</p></div><a href="resume.pdf" download="Abin_Kurian_Resume.pdf" class="resume-dl-btn"><svg viewBox="0 0 24 24"><path d="M12 16l-5-5 1.4-1.4 2.6 2.6V4h2v8.2l2.6-2.6L17 11l-5 5zm-6 4v-2h12v2H6z"/></svg>Download Resume</a></div></section><section id="contact" class="sec"><p class="sec-ey rv">Contact</p><h2 class="ct-big rv d1">Have a project<br>in mind?<br><a href="mailto:abin.kuriachan1@gmail.com">abin.kuriachan1@gmail.com</a></h2><div class="ct-grid"><div class="rv d2"><div class="cl">Email</div><div class="cv" style="margin-bottom:14px"><a href="mailto:abin.kuriachan1@gmail.com" style="color:#6366f1;text-decoration:none">abin.kuriachan1@gmail.com</a></div><div class="cl">Phone</div><div class="cv">+91 93727 47299</div></div><div class="rv d3"><div class="cl">Location</div><div class="cv" style="margin-bottom:14px">Mumbai, Maharashtra, India</div><div class="cl">Available for</div><div class="cv">On-site &amp; Remote roles</div></div><div class="rv d4"><div class="cl">Social</div><a href="https://github.com/Aby0705" target="_blank" class="clink">GitHub ↗</a><a href="https://www.linkedin.com/in/abin-kurian/" target="_blank" class="clink">LinkedIn ↗</a><a href="mailto:abin.kuriachan1@gmail.com" class="clink">Email ↗</a></div></div><div class="ft rv d5"><span>Design &amp; built by <a href="#">Abin Kurian</a></span><span>© 2026</span></div></section></main></div><script>function goTo(id){var e=document.getElementById(id);if(e)e.scrollIntoView({behavior:'smooth'})}function toggleMobMenu(){var btn=document.getElementById('mobMenuBtn'),d=document.getElementById('mobDrawer');btn.classList.toggle('open');d.classList.toggle('open');document.body.style.overflow=d.classList.contains('open')?'hidden':'';}function closeMobMenu(){document.getElementById('mobMenuBtn').classList.remove('open');document.getElementById('mobDrawer').classList.remove('open');document.body.style.overflow='';}var cur=document.getElementById('cur'),ring=document.getElementById('cur-ring');var cx=window.innerWidth/2,cy=window.innerHeight/2,rx=cx,ry=cy;document.addEventListener('mousemove',function(e){cx=e.clientX;cy=e.clientY;cur.style.left=cx+'px';cur.style.top=cy+'px'});(function rl(){rx+=(cx-rx)*.1;ry+=(cy-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(rl)})();document.querySelectorAll('a,button').forEach(function(el){el.addEventListener('mouseenter',function(){ring.style.width='44px';ring.style.height='44px';ring.style.borderColor='rgba(99,102,241,.5)'});el.addEventListener('mouseleave',function(){ring.style.width='30px';ring.style.height='30px';ring.style.borderColor='rgba(0,0,0,.2)'});});var blobEl=document.getElementById('blob-svg');var blobPath=document.getElementById('blob-path');var bx=window.innerWidth/2,by=window.innerHeight/2;var btx=bx,bty=by;var blobAngle=0;document.addEventListener('mousemove',function(e){btx=e.clientX;bty=e.clientY});document.addEventListener('touchmove',function(e){var t=e.touches[0];btx=t.clientX;bty=t.clientY;},{passive:true});function generateBlobPath(cx,cy,radius,points,randomness,angle){var pts=[];for(var i=0;i<points;i++){var a=(i/points)*Math.PI*2+angle;var r=radius*(1+(Math.sin(i*2.3+angle*1.7)*.35+Math.cos(i*3.1+angle*2.1)*.25)*randomness);pts.push({x:cx+Math.cos(a)*r,y:cy+Math.sin(a)*r});}var d='';for(var i=0;i<pts.length;i++){var p0=pts[(i-1+pts.length)%pts.length];var p1=pts[i];var p2=pts[(i+1)%pts.length];var cp1x=p1.x+(p2.x-p0.x)*.22;var cp1y=p1.y+(p2.y-p0.y)*.22;var p3=pts[(i+2)%pts.length];var cp2x=p2.x-(p3.x-p1.x)*.22;var cp2y=p2.y-(p3.y-p1.y)*.22;if(i===0)d+='M'+p1.x+','+p1.y;d+=' C'+cp1x+','+cp1y+' '+cp2x+','+cp2y+' '+p2.x+','+p2.y;}return d+'Z';}function animateBlob(){bx+=(btx-bx)*.042;by+=(bty-by)*.042;blobAngle+=0.004;blobEl.style.left=bx+'px';blobEl.style.top=by+'px';var d=generateBlobPath(100,100,72,8,1,blobAngle);blobPath.setAttribute('d',d);requestAnimationFrame(animateBlob);}animateBlob();var roleEl=document.getElementById('heroRole');var roles=['IT Associate Manager','Network Administrator','BFSI IT Specialist','System Administrator','IT Associate Manager'];var currentRole=0;var CHARS='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&!?~';var FOREIGN='アイウエオカキクケコサシスセソ가나다라마바사아자차카타파하αβγδεζηθАБВГДЕЖЗИЙ';var ALL_CHARS=CHARS+FOREIGN;function scrambleText(el,finalText,cb){var len=finalText.length;var frame=0;var totalFrames=28;var interval=setInterval(function(){frame++;var progress=frame/totalFrames;var lockedChars=Math.floor(progress*progress*len);var out='';for(var i=0;i<len;i++){if(finalText[i]===' '){out+=' ';continue}if(i<lockedChars){out+=finalText[i]}else{var charset=progress<0.4?ALL_CHARS:CHARS;out+=charset[Math.floor(Math.random()*charset.length)];}}el.textContent=out;if(frame>=totalFrames){clearInterval(interval);el.textContent=finalText;if(cb)cb()}},45);}function cycleRole(){currentRole=(currentRole+1)%roles.length;scrambleText(roleEl,roles[currentRole],function(){setTimeout(cycleRole,3200);});}var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});},{threshold:0.06,rootMargin:'0px 0px -32px 0px'});document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});var navLinks=document.querySelectorAll('.s-nav a, .mob-drawer nav a');var secIds=['hero','about','experience','projects','skills','contact'];window.addEventListener('scroll',function(){var sy=window.scrollY+130;secIds.forEach(function(id,i){var el=document.getElementById(id);if(el&&sy>=el.offsetTop&&sy<el.offsetTop+el.offsetHeight){navLinks.forEach(function(a){a.classList.remove('active')});document.querySelectorAll('.s-nav a, .mob-drawer nav a').forEach(function(a,j){if(j===i||j===i+6)a.classList.add('active');});}});},{passive:true});window.addEventListener('load',function(){setTimeout(function(){document.getElementById('iw1').classList.add('up');document.getElementById('iw2').classList.add('up');document.getElementById('isub').classList.add('up');},200);setTimeout(function(){document.getElementById('intro').classList.add('exit')},1950);setTimeout(function(){document.getElementById('intro').classList.add('gone');document.getElementById('layout').classList.add('show');setTimeout(function(){document.getElementById('heroH').classList.add('go')},80);setTimeout(function(){setTimeout(cycleRole,2800)},800);},2750);});</script></body></html>
+<!--
+  This site is protected.
+  Unauthorized copying of this code is prohibited.
+  Build your own!
+-->
+<!-- This site is protected. Unauthorized copying of this code is prohibited. Build your own at claude.ai -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abin Kurian — IT Associate Manager</title>
+<style>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:#F5F5F7;color:#1d1d1f;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Helvetica Neue',Arial,sans-serif;font-weight:400;overflow-x:hidden;cursor:none;-webkit-font-smoothing:antialiased}@media(hover:none){body{cursor:auto}#cur,#cur-ring{display:none}}.graph-bg{position:fixed;inset:0;z-index:0;pointer-events:none;background-color:#F5F5F7;background-image:linear-gradient(rgba(0,0,0,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.05) 1px,transparent 1px),linear-gradient(rgba(0,0,0,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.02) 1px,transparent 1px);background-size:60px 60px,60px 60px,12px 12px,12px 12px}#blob-svg{position:fixed;pointer-events:none;z-index:1;width:600px;height:600px;transform:translate(-50%,-50%);transition:none;opacity:.75}#blob-svg path{fill:url(#blobGrad);filter:blur(2px)}#cur{position:fixed;width:8px;height:8px;background:#1d1d1f;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%)}#cur-ring{position:fixed;width:30px;height:30px;border:1.5px solid rgba(0,0,0,.2);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s}#intro{position:fixed;inset:0;z-index:9000;background:#F5F5F7;display:flex;align-items:center;justify-content:center;overflow:hidden}.ip{position:absolute;left:0;right:0;background:#F5F5F7;transition:height .75s cubic-bezier(.77,0,.18,1)}#ip-t{top:0;height:50%}#ip-b{bottom:0;height:50%}#intro.exit #ip-t{height:0}#intro.exit #ip-b{height:0}#intro.gone{display:none}.iname{position:relative;z-index:2;text-align:center}.iw{display:block;overflow:hidden;font-size:clamp(60px,11vw,148px);font-weight:700;letter-spacing:-.04em;line-height:.88;color:#1d1d1f}.iw span{display:block;transform:translateY(110%);transition:transform .85s cubic-bezier(.16,1,.3,1)}.iw.up span{transform:translateY(0)}.iw:nth-child(2) span{transition-delay:.07s}.isub{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#6e6e73;margin-top:20px;opacity:0;transition:opacity .6s ease .9s}.isub.up{opacity:1}.layout{opacity:0;transition:opacity .7s ease;position:relative;z-index:2}.layout.show{opacity:1}.sidebar{position:fixed;left:0;top:0;bottom:0;width:220px;display:flex;flex-direction:column;padding:32px 24px;border-right:1px solid rgba(0,0,0,.08);z-index:100;background:rgba(245,245,247,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}.s-logo{font-size:15px;font-weight:700;letter-spacing:.02em;color:#1d1d1f;text-decoration:none;margin-bottom:40px;display:block}.s-logo b{color:#6366f1}.s-lbl{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#86868b;margin-bottom:10px}.s-soc{display:flex;flex-direction:column;gap:4px;margin-bottom:32px}.s-soc a{font-size:12px;color:#6e6e73;text-decoration:none;display:flex;align-items:center;gap:8px;padding:5px 8px;border-radius:6px;transition:color .2s,background .2s,padding-left .25s}.s-soc a:hover{color:#1d1d1f;background:rgba(0,0,0,.04);padding-left:13px}.s-soc svg{width:13px;height:13px;fill:currentColor;flex-shrink:0}.s-nav{display:flex;flex-direction:column;gap:2px;flex:1}.s-nav a{font-size:13px;font-weight:500;color:#6e6e73;text-decoration:none;padding:9px 10px;border-radius:8px;transition:color .2s,background .2s}.s-nav a:hover,.s-nav a.active{color:#1d1d1f;background:rgba(0,0,0,.05)}.s-nav a.active{font-weight:600}.s-email{margin-top:auto;padding-top:16px;border-top:1px solid rgba(0,0,0,.07);font-size:11px;color:#86868b}.s-email a{color:#86868b;text-decoration:none;transition:color .2s}.s-email a:hover{color:#6366f1}.mob-nav{display:none;position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(245,245,247,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:0 20px;height:56px;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(0,0,0,.08)}.mob-logo{font-size:15px;font-weight:700;color:#1d1d1f;text-decoration:none}.mob-logo b{color:#6366f1}.mob-menu-btn{width:36px;height:36px;background:none;border:1px solid rgba(0,0,0,.12);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer}.mob-menu-btn span{width:16px;height:1.5px;background:#1d1d1f;display:block;transition:all .3s}.mob-menu-btn.open span:nth-child(1){transform:rotate(45deg) translate(4.5px,4.5px)}.mob-menu-btn.open span:nth-child(2){opacity:0}.mob-menu-btn.open span:nth-child(3){transform:rotate(-45deg) translate(4.5px,-4.5px)}.mob-drawer{display:none;position:fixed;top:56px;left:0;right:0;bottom:0;z-index:199;background:rgba(245,245,247,.98);backdrop-filter:blur(20px);flex-direction:column;padding:32px 28px;overflow-y:auto}.mob-drawer.open{display:flex}.mob-drawer nav{display:flex;flex-direction:column;gap:4px;margin-bottom:36px}.mob-drawer nav a{font-size:18px;font-weight:600;color:#6e6e73;text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,0,0,.06);transition:color .2s}.mob-drawer nav a:hover,.mob-drawer nav a.active{color:#1d1d1f}.mob-soc{display:flex;gap:14px;margin-top:auto}.mob-soc a{font-size:13px;color:#6e6e73;text-decoration:none;padding:8px 14px;border:1px solid rgba(0,0,0,.1);border-radius:100px;transition:all .2s}.mob-soc a:hover{color:#6366f1;border-color:#6366f1}.main{margin-left:220px;min-height:100vh}#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:80px 72px;border-bottom:1px solid rgba(0,0,0,.08);position:relative;overflow:hidden}.hero-tag{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#86868b;margin-bottom:20px;display:flex;align-items:center;gap:12px}.hero-tag::before{content:'';width:18px;height:1px;background:#86868b}.hero-h{font-size:clamp(44px,5.8vw,88px);font-weight:700;line-height:.92;letter-spacing:-.04em;color:#1d1d1f;margin-bottom:20px}.hero-h .ln{display:block;overflow:hidden}.hero-h .ln span{display:block;transform:translateY(100%);transition:transform .9s cubic-bezier(.16,1,.3,1)}.hero-h .ln:nth-child(2) span{transition-delay:.08s}.hero-h.go .ln span{transform:translateY(0)}.hero-h .vt{color:#6366f1}.hero-role{font-size:clamp(18px,2.8vw,32px);font-weight:600;letter-spacing:-.02em;color:#6366f1;margin-bottom:28px;min-height:1.4em}.hero-p{font-size:16px;color:#6e6e73;line-height:1.75;max-width:480px;margin-bottom:36px}.hero-stats{display:flex;gap:40px;margin-bottom:40px;flex-wrap:wrap}.hs-n{font-size:28px;font-weight:700;color:#1d1d1f;letter-spacing:-.02em}.hs-l{font-size:11px;color:#86868b;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}.hero-btn{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;letter-spacing:-.01em;color:#fff;background:#1d1d1f;padding:14px 26px;text-decoration:none;border-radius:100px;transition:background .25s,gap .25s,transform .2s;width:fit-content}.hero-btn:hover{background:#6366f1;gap:16px;transform:translateY(-1px)}.sec{padding:88px 72px;border-bottom:1px solid rgba(0,0,0,.08);position:relative}.sec-ey{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#86868b;margin-bottom:12px;display:flex;align-items:center;gap:10px}.sec-ey::before{content:'';width:16px;height:1px;background:#86868b}.sec-h{font-size:clamp(24px,3.5vw,46px);font-weight:700;letter-spacing:-.025em;line-height:1.05;color:#1d1d1f;margin-bottom:48px}.sec-h em{font-style:italic;color:#86868b;font-weight:400}#about{background:rgba(255,255,255,.7)}.about-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:start}.apq{font-size:clamp(15px,1.8vw,20px);font-weight:600;line-height:1.55;color:#1d1d1f;border-left:2px solid #6366f1;padding-left:20px;margin-bottom:24px}.ab{font-size:14.5px;color:#6e6e73;line-height:1.9}.ab p+p{margin-top:14px}.edu-t{display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding:9px 14px;border-radius:8px;border:1px solid rgba(0,0,0,.1);font-size:12px;color:#1d1d1f;background:#fff}.edu-t::before{content:'◆';color:#6366f1;font-size:7px}.daily-h{font-size:clamp(16px,1.8vw,22px);font-weight:700;letter-spacing:-.01em;margin-bottom:18px;color:#1d1d1f}.daily-list{list-style:none;display:flex;flex-direction:column;gap:10px}.daily-list li{font-size:13.5px;color:#6e6e73;display:flex;gap:10px;align-items:flex-start;line-height:1.7}.daily-list li span{color:#6366f1;flex-shrink:0}#experience{background:rgba(245,245,247,.9)}.exp-list{display:flex;flex-direction:column}.ei{display:grid;grid-template-columns:170px minmax(0,1fr);gap:36px;padding:32px 0;border-top:1px solid rgba(0,0,0,.08);align-items:start;transition:padding-left .25s}.ei:last-child{border-bottom:1px solid rgba(0,0,0,.08)}.ei:hover{padding-left:6px}.ei-co{font-size:14px;font-weight:700;color:#1d1d1f;margin-bottom:4px}.ei-per{font-size:10px;letter-spacing:.1em;color:#6366f1;text-transform:uppercase}.ei-role{font-size:18px;font-weight:700;color:#1d1d1f;margin-bottom:8px;letter-spacing:-.01em}.ei-desc{font-size:13.5px;color:#6e6e73;line-height:1.85}#projects{background:rgba(255,255,255,.7)}.pj-list{display:flex;flex-direction:column}.pj{display:grid;grid-template-columns:60px minmax(0,1fr);gap:28px;padding:36px 0;border-top:1px solid rgba(0,0,0,.08);transition:padding-left .25s;cursor:pointer}.pj:last-child{border-bottom:1px solid rgba(0,0,0,.08)}.pj:hover{padding-left:6px}.pj:hover .pj-title{color:#6366f1}.pj-num{font-size:38px;font-weight:700;color:rgba(0,0,0,.08);line-height:1;transition:color .3s;letter-spacing:-.03em}.pj:hover .pj-num{color:rgba(99,102,241,.22)}.pj-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:9px}.pt{font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:100px;border:1px solid rgba(0,0,0,.1);color:#86868b;background:#fff;transition:all .25s}.pj:hover .pt{border-color:rgba(99,102,241,.4);color:#6366f1;background:rgba(99,102,241,.05)}.pj-title{font-size:clamp(15px,1.9vw,21px);font-weight:700;color:#1d1d1f;margin-bottom:8px;transition:color .25s;letter-spacing:-.015em}.pj-desc{font-size:13.5px;color:#6e6e73;line-height:1.85;margin-bottom:9px;max-width:540px}.pj-stack{font-size:11px;color:#86868b;letter-spacing:.04em}#skills{background:transparent;padding:0;position:relative}.skills-wrap{position:relative}.skill-card-stack{position:sticky;top:0;min-height:100vh;display:grid;grid-template-columns:220px minmax(0,1fr);overflow:hidden;box-shadow:0 -8px 48px rgba(0,0,0,.1)}.skill-card-stack:nth-child(1){z-index:10;background:#EFEFEF}.skill-card-stack:nth-child(2){z-index:20;background:#E8E8EA}.skill-card-stack:nth-child(3){z-index:30;background:#E2E2E4}.skills-spacer{height:100vh}.scs-left{display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 64px 72px;border-right:1px solid rgba(0,0,0,.09)}.scs-other{display:flex;flex-direction:column;gap:0;margin-bottom:16px}.scs-other-title{font-size:clamp(12px,1.4vw,17px);font-weight:600;letter-spacing:-.01em;color:rgba(0,0,0,.25);line-height:1.2;border-top:1px solid rgba(0,0,0,.08);padding:12px 0}.scs-num{font-size:clamp(28px,4vw,54px);font-weight:700;letter-spacing:-.03em;color:#1d1d1f;line-height:1}.scs-right{display:flex;flex-direction:column;justify-content:center;padding:80px 72px}.sp-label{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#86868b;margin-bottom:16px}.sp-title{font-size:clamp(30px,4.5vw,62px);font-weight:700;letter-spacing:-.035em;line-height:1;color:#1d1d1f;margin-bottom:26px}.sp-desc{font-size:15px;color:#6e6e73;line-height:1.85;max-width:500px;margin-bottom:36px}.sp-items{display:flex;flex-direction:column;gap:0}.sp-item{display:flex;align-items:baseline;gap:20px;padding:16px 0;border-bottom:1px solid rgba(0,0,0,.08)}.sp-item:first-child{border-top:1px solid rgba(0,0,0,.08)}.sp-item-n{font-size:11px;color:#86868b;letter-spacing:.1em;min-width:22px;font-weight:500}.sp-item-text{font-size:clamp(15px,2vw,22px);font-weight:600;color:#1d1d1f;letter-spacing:-.01em}#resume-section{background:rgba(255,255,255,.8);padding:80px 72px;border-top:1px solid rgba(0,0,0,.08);border-bottom:1px solid rgba(0,0,0,.08);position:relative;z-index:40}.resume-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}.resume-text h2{font-size:clamp(22px,3vw,40px);font-weight:700;letter-spacing:-.025em;color:#1d1d1f;margin-bottom:8px}.resume-text p{font-size:14px;color:#6e6e73;line-height:1.7;max-width:420px}.resume-dl-btn{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;letter-spacing:-.01em;color:#fff;background:#1d1d1f;padding:16px 32px;text-decoration:none;border-radius:100px;transition:background .25s,gap .25s,transform .2s;white-space:nowrap;flex-shrink:0}.resume-dl-btn:hover{background:#6366f1;gap:14px;transform:translateY(-1px)}.resume-dl-btn svg{width:16px;height:16px;fill:currentColor;flex-shrink:0}#contact{background:rgba(255,255,255,.7);position:relative;z-index:40}.ct-big{font-size:clamp(18px,3.2vw,50px);font-weight:700;letter-spacing:-.03em;line-height:1.1;margin-bottom:36px;overflow-wrap:break-word;word-break:break-word}.ct-big a{color:#6366f1;text-decoration:none;border-bottom:2px solid rgba(99,102,241,.22);transition:border-color .25s;font-size:clamp(14px,2.6vw,42px)}.ct-big a:hover{border-color:#6366f1}.ct-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:40px}.cl{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#86868b;margin-bottom:7px}.cv{font-size:14px;color:#1d1d1f}.clink{font-size:14px;color:#6e6e73;text-decoration:none;display:block;transition:color .2s,padding-left .2s;margin-bottom:4px;padding:3px 0}.clink:hover{color:#6366f1;padding-left:5px}.ft{margin-top:48px;padding-top:22px;border-top:1px solid rgba(0,0,0,.08);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:11px;color:#86868b;letter-spacing:.04em}.ft a{color:#86868b;text-decoration:none}.ft a:hover{color:#6366f1}.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}.rv.in{opacity:1;transform:translateY(0)}.d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}.d5{transition-delay:.35s}.d6{transition-delay:.42s}@media(max-width:768px){body{cursor:auto}.sidebar{display:none}.mob-nav{display:flex}.main{margin-left:0;padding-top:56px}#hero{padding:52px 24px 64px;min-height:calc(100vh - 56px)}.hero-tag{margin-top:8px}.sec{padding:64px 24px}#contact{padding:64px 24px}.about-grid{grid-template-columns:1fr;gap:36px}.ct-grid{grid-template-columns:1fr 1fr;gap:20px}.ct-grid>div:first-child{grid-column:1/-1}.ei{grid-template-columns:1fr;gap:6px;padding:28px 0}.pj{grid-template-columns:1fr;gap:8px;padding:28px 0}.pj-num{font-size:28px}.skill-card-stack{position:relative;min-height:auto;grid-template-columns:1fr;box-shadow:none;border-bottom:1px solid rgba(0,0,0,.08)}.scs-left{display:none}.scs-right{padding:56px 24px}.skills-spacer{display:none}#resume-section{padding:56px 24px}.resume-inner{flex-direction:column;align-items:flex-start}}@media(max-width:480px){.hero-stats{gap:24px}.ct-grid{grid-template-columns:1fr}.hero-h{font-size:clamp(40px,12vw,72px)}}</style>
+
+<script>
+/* ── SITE PROTECTION ── */
+(function(){
+
+  // 1. Disable right-click context menu
+  document.addEventListener('contextmenu', function(e){
+    e.preventDefault();
+    showBlock(e.clientX, e.clientY);
+    return false;
+  });
+
+  // 2. Disable text selection
+  document.addEventListener('selectstart', function(e){ e.preventDefault(); return false; });
+  document.addEventListener('dragstart',   function(e){ e.preventDefault(); return false; });
+
+  // 3. Block keyboard shortcuts
+  document.addEventListener('keydown', function(e){
+    var key = e.key ? e.key.toLowerCase() : '';
+    var ctrl = e.ctrlKey || e.metaKey;
+
+    // Ctrl+U = view source
+    if(ctrl && key === 'u'){ e.preventDefault(); showBlock(); return false; }
+    // Ctrl+S = save page
+    if(ctrl && key === 's'){ e.preventDefault(); return false; }
+    // Ctrl+Shift+I = devtools
+    if(ctrl && e.shiftKey && key === 'i'){ e.preventDefault(); showBlock(); return false; }
+    // Ctrl+Shift+J = devtools console
+    if(ctrl && e.shiftKey && key === 'j'){ e.preventDefault(); return false; }
+    // Ctrl+Shift+C = inspect element
+    if(ctrl && e.shiftKey && key === 'c'){ e.preventDefault(); return false; }
+    // F12 = devtools
+    if(e.key === 'F12'){ e.preventDefault(); showBlock(); return false; }
+    // Ctrl+A = select all
+    if(ctrl && key === 'a'){ e.preventDefault(); return false; }
+    // Ctrl+P = print (which shows source)
+    if(ctrl && key === 'p'){ e.preventDefault(); return false; }
+  });
+
+  // 4. Custom block overlay
+  function showBlock(x, y){
+    var existing = document.getElementById('_protect_overlay');
+    if(existing){ existing.remove(); }
+
+    var overlay = document.createElement('div');
+    overlay.id = '_protect_overlay';
+    overlay.style.cssText = [
+      'position:fixed',
+      'inset:0',
+      'z-index:999999',
+      'display:flex',
+      'align-items:center',
+      'justify-content:center',
+      'background:rgba(0,0,0,0.55)',
+      'backdrop-filter:blur(4px)',
+      '-webkit-backdrop-filter:blur(4px)',
+      'animation:_pfadeIn .2s ease'
+    ].join(';');
+
+    var box = document.createElement('div');
+    box.style.cssText = [
+      'background:#fff',
+      'border-radius:16px',
+      'padding:36px 40px',
+      'max-width:380px',
+      'text-align:center',
+      'font-family:-apple-system,BlinkMacSystemFont,sans-serif',
+      'box-shadow:0 24px 64px rgba(0,0,0,0.25)'
+    ].join(';');
+
+    var icon = document.createElement('div');
+    icon.textContent = '🔒';
+    icon.style.cssText = 'font-size:40px;margin-bottom:16px';
+
+    var title = document.createElement('p');
+    title.textContent = 'This site is protected.';
+    title.style.cssText = 'font-size:17px;font-weight:700;color:#1d1d1f;margin-bottom:8px;letter-spacing:-.01em';
+
+    var sub = document.createElement('p');
+    sub.textContent = 'Unauthorized copying of this code is prohibited. Build your own!';
+    sub.style.cssText = 'font-size:13px;color:#6e6e73;line-height:1.6;margin-bottom:24px';
+
+    var btn = document.createElement('button');
+    btn.textContent = 'Got it';
+    btn.style.cssText = [
+      'background:#1d1d1f',
+      'color:#fff',
+      'border:none',
+      'padding:12px 32px',
+      'border-radius:100px',
+      'font-size:14px',
+      'font-weight:600',
+      'cursor:pointer',
+      'letter-spacing:-.01em',
+      'font-family:-apple-system,BlinkMacSystemFont,sans-serif'
+    ].join(';');
+    btn.onmouseover = function(){ this.style.background='#6366f1'; };
+    btn.onmouseout  = function(){ this.style.background='#1d1d1f'; };
+    btn.onclick = function(){ overlay.remove(); };
+
+    box.appendChild(icon);
+    box.appendChild(title);
+    box.appendChild(sub);
+    box.appendChild(btn);
+    overlay.appendChild(box);
+    overlay.addEventListener('click', function(e){ if(e.target===overlay) overlay.remove(); });
+    document.body.appendChild(overlay);
+  }
+
+  // Add keyframe for fade-in
+  var style = document.createElement('style');
+  style.textContent = '@keyframes _pfadeIn{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:scale(1)}}';
+  document.head.appendChild(style);
+
+  // 5. Disable image dragging
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('img').forEach(function(img){
+      img.setAttribute('draggable','false');
+      img.style.userSelect='none';
+      img.style.webkitUserSelect='none';
+      img.style.pointerEvents='none';
+    });
+  });
+
+})();
+</script>
+</head>
+<body>
+<svg id="blob-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="position:fixed;pointer-events:none;z-index:1;width:600px;height:600px;transform:translate(-50%,-50%);left:50%;top:50%">
+<defs>
+<radialGradient id="blobGrad" cx="50%" cy="50%" r="50%">
+<stop offset="0%"   stop-color="rgba(99,102,241,0.22)"/>
+<stop offset="45%"  stop-color="rgba(139,92,246,0.14)"/>
+<stop offset="100%" stop-color="rgba(99,102,241,0)"/>
+</radialGradient>
+</defs>
+<path id="blob-path" fill="url(#blobGrad)"/>
+</svg>
+<div id="cur">
+</div>
+<div id="cur-ring">
+</div>
+<div id="intro">
+<div class="ip" id="ip-t">
+</div>
+<div class="ip" id="ip-b">
+</div>
+<div class="iname">
+<span class="iw" id="iw1">
+<span>ABIN</span>
+</span>
+<span class="iw" id="iw2">
+<span>KURIAN</span>
+</span>
+<p class="isub" id="isub">IT Associate Manager · Mumbai</p>
+</div>
+</div>
+<div class="layout" id="layout">
+<nav class="mob-nav" id="mobNav">
+<a href="#" class="mob-logo">AK<b>.</b>
+</a>
+<button class="mob-menu-btn" id="mobMenuBtn" onclick="toggleMobMenu()">
+<span>
+</span>
+<span>
+</span>
+<span>
+</span>
+</button>
+</nav>
+<div class="mob-drawer" id="mobDrawer">
+<nav>
+<a href="#hero"       class="active"  onclick="goTo('hero');closeMobMenu();return false">Home</a>
+<a href="#about"                       onclick="goTo('about');closeMobMenu();return false">About Me</a>
+<a href="#experience"                  onclick="goTo('experience');closeMobMenu();return false">Experience</a>
+<a href="#projects"                    onclick="goTo('projects');closeMobMenu();return false">Projects</a>
+<a href="#skills"                      onclick="goTo('skills');closeMobMenu();return false">Skills</a>
+<a href="#contact"                     onclick="goTo('contact');closeMobMenu();return false">Contact</a>
+</nav>
+<div class="mob-soc">
+<a href="https://github.com/Aby0705" target="_blank">GitHub</a>
+<a href="https://www.linkedin.com/in/abin-kurian/" target="_blank">LinkedIn</a>
+<a href="mailto:abin.kuriachan1@gmail.com">Email</a>
+</div>
+</div>
+<aside class="sidebar">
+<a href="#" class="s-logo">AK<b>.</b>
+</a>
+<p class="s-lbl">Social</p>
+<div class="s-soc">
+<a href="https://github.com/Aby0705" target="_blank">
+<svg viewBox="0 0 24 24">
+<path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.49.5.09.682-.218.682-.484 0-.236-.009-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.16 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+</svg>
+<span>github</span>
+</a>
+<a href="https://www.linkedin.com/in/abin-kurian/" target="_blank">
+<svg viewBox="0 0 24 24">
+<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+</svg>
+<span>linkedin</span>
+</a>
+<a href="mailto:abin.kuriachan1@gmail.com">
+<svg viewBox="0 0 24 24">
+<path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+</svg>
+<span>email</span>
+</a>
+</div>
+<nav class="s-nav">
+<a href="#hero"       class="active" onclick="goTo('hero');return false">Home</a>
+<a href="#about"                      onclick="goTo('about');return false">About Me</a>
+<a href="#experience"                 onclick="goTo('experience');return false">Experience</a>
+<a href="#projects"                   onclick="goTo('projects');return false">Projects</a>
+<a href="#skills"                     onclick="goTo('skills');return false">Skills</a>
+</nav>
+<div class="s-email">
+<a href="mailto:abin.kuriachan1@gmail.com">
+abin.kuriachan1@gmail.com
+</a>
+</div>
+</aside>
+<main class="main">
+<section id="hero">
+<p class="hero-tag">IT Associate Manager · Mumbai, India</p>
+<h1 class="hero-h" id="heroH">
+<span class="ln">
+<span>ABIN</span>
+</span>
+<span class="ln">
+<span>KURIAN<span class="vt">.</span>
+</span>
+</span>
+</h1>
+<div class="hero-role" id="heroRole">IT Associate Manager</div>
+<p class="hero-p rv d1">IT infrastructure professional keeping BFSI trading systems running and secure at Shreni Shares — building detection tools that catch threats before they become incidents.</p>
+<div class="hero-stats rv d2">
+<div>
+<div class="hs-n">9.08</div>
+<div class="hs-l">CGPA</div>
+</div>
+<div>
+<div class="hs-n">4+</div>
+<div class="hs-l">Projects</div>
+</div>
+<div>
+<div class="hs-n">01</div>
+<div class="hs-l">Research Paper</div>
+</div>
+</div>
+<a href="#contact" class="hero-btn rv d3" onclick="goTo('contact');return false">Get in Touch →</a>
+</section>
+<section id="about" class="sec">
+<p class="sec-ey rv">About Me</p>
+<div class="about-grid">
+<div>
+<blockquote class="apq rv d1">"Security isn't a feature — it's the foundation every system should be built on."</blockquote>
+<div class="ab rv d2">
+<p>Based in Mumbai, I work as IT Associate Manager at Shreni Shares Limited — a SEBI/NSE/BSE regulated brokerage where uptime is non-negotiable. My day begins with BOD system checks and ends with EOD validation, keeping live trading infrastructure healthy.</p>
+<p>Beyond operations, I build security detection tooling — Python intrusion scripts, Splunk dashboards and SIEM rules engineered to catch threats. I published a national research paper on Cloud Computing security at Wilson College.</p>
+</div>
+<div class="edu-t rv d3">B.Sc. IT · Wilson College, Mumbai · CGPA 9.08 / 10</div>
+</div>
+<div class="rv d2">
+<p class="daily-h">What I do every day</p>
+<ul class="daily-list">
+<li>
+<span>→</span>L1 &amp; L2 IT support for trading workstations in live market hours</li>
+<li>
+<span>→</span>BOD/EOD system health checks and readiness validation</li>
+<li>
+<span>→</span>Active Directory, endpoint security and network operations</li>
+<li>
+<span>→</span>MoneyMaker trading platform administration</li>
+<li>
+<span>→</span>Building security detection scripts and Splunk dashboards</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="experience" class="sec">
+<p class="sec-ey rv">Career</p>
+<h2 class="sec-h rv d1">My <em>Experience</em>
+</h2>
+<div class="exp-list">
+<a href="shreni.html" class="ei rv d2" style="text-decoration:none;color:inherit;display:grid">
+<div>
+<div class="ei-co">Shreni Shares Ltd.</div>
+<div class="ei-per">Jul 2025 – Present</div>
+</div>
+<div>
+<div class="ei-role">IT Associate Manager<span style="font-size:11px;font-weight:400;color:#6366f1;margin-left:10px;letter-spacing:.04em">View details ↗</span>
+</div>
+<div class="ei-desc">L1 &amp; L2 support for trading workstations in SEBI/NSE/BSE regulated environment. BOD/EOD operations, MoneyMaker platform administration, Active Directory, endpoint security, vendor coordination.</div>
+</div>
+</a>
+<a href="gracious.html" class="ei rv d3" style="text-decoration:none;color:inherit;display:grid">
+<div>
+<div class="ei-co">Gracious Exports</div>
+<div class="ei-per">Dec 2024 – Jun 2025</div>
+</div>
+<div>
+<div class="ei-role">IT Support Associate<span style="font-size:11px;font-weight:400;color:#6366f1;margin-left:10px;letter-spacing:.04em">View details ↗</span>
+</div>
+<div class="ei-desc">First-level desktop, laptop and printer troubleshooting. MS Office and Outlook/IMAP/SMTP configuration. IT asset inventory tracking and vendor coordination for hardware repairs.</div>
+</div>
+</a>
+<div class="ei rv d4">
+<div>
+<div class="ei-co">Wilson College</div>
+<div class="ei-per">2021 – 2024</div>
+</div>
+<div>
+<div class="ei-role">B.Sc. Information Technology</div>
+<div class="ei-desc">Graduated with CGPA 9.08/10. Published national research paper on Security and Privacy in Cloud Computing. Studied networking, OS, databases and software engineering.</div>
+</div>
+</div>
+</div>
+</section>
+<section id="projects" class="sec">
+<p class="sec-ey rv">Work</p>
+<h2 class="sec-h rv d1">Selected <em>Projects</em>
+</h2>
+<div class="pj-list">
+<div class="pj rv d2">
+<div class="pj-num">01</div>
+<div>
+<div class="pj-tags">
+<span class="pt">Splunk</span>
+<span class="pt">Kali Linux</span>
+<span class="pt">auth.log</span>
+<span class="pt">SPL</span>
+</div>
+<div class="pj-title">SSH Brute-Force Detection in Splunk</div>
+<div class="pj-desc">Simulated SSH brute-force attacks and engineered Splunk dashboards with threshold-based alerting. SPL queries with dynamic thresholds, time-window bucketing and IP geo-enrichment.</div>
+<div class="pj-stack">Kali Linux · Nmap · Splunk · auth.log · SPL Queries</div>
+</div>
+</div>
+<div class="pj rv d3">
+<div class="pj-num">02</div>
+<div>
+<div class="pj-tags">
+<span class="pt">Python</span>
+<span class="pt">Bash</span>
+<span class="pt">Splunk HEC</span>
+<span class="pt">ELK</span>
+</div>
+<div class="pj-title">Custom Log-Based Intrusion Detection Script</div>
+<div class="pj-desc">Python script parsing Linux auth logs in real time for brute-force patterns with configurable sliding-window thresholds, IP geolocation and optional iptables auto-blocking.</div>
+<div class="pj-stack">Python · Bash · Splunk HEC · ELK Logstash · iptables</div>
+</div>
+</div>
+<div class="pj rv d4">
+<div class="pj-num">03</div>
+<div>
+<div class="pj-tags">
+<span class="pt">Python</span>
+<span class="pt">Splunk</span>
+<span class="pt">F1 Score</span>
+</div>
+<div class="pj-title">Detection Rule Tuning &amp; False Positive Reduction</div>
+<div class="pj-desc">Built SIEM detection rules then refined across 5 versions using Precision, Recall and F1 scoring. Achieved zero false positives while maintaining 100% attack detection.</div>
+<div class="pj-stack">Python · Splunk / ELK · F1 Scoring · Exclusion Lists</div>
+</div>
+</div>
+<div class="pj rv d5">
+<div class="pj-num">04</div>
+<div>
+<div class="pj-tags">
+<span class="pt">Python</span>
+<span class="pt">Flask</span>
+<span class="pt">SQLite</span>
+<span class="pt">2FA</span>
+</div>
+<div class="pj-title">IT Asset &amp; Inventory Management Platform</div>
+<div class="pj-desc">Full-stack web app for managing IT assets with role-based access (2FA TOTP), CSRF protection, rate limiting, comprehensive audit trail and exportable reports.</div>
+<div class="pj-stack">Python · Flask · SQLite · WSGI · 2FA TOTP · Pandas Reports</div>
+</div>
+</div>
+</div>
+</section>
+<section id="skills">
+<div class="skills-wrap">
+<div class="skill-card-stack">
+<div class="scs-left">
+<div class="scs-num">(01)</div>
+</div>
+<div class="scs-right">
+<p class="sp-label">IT Infrastructure &amp; Operations</p>
+<h3 class="sp-title">Infrastructure<br>&amp; Support</h3>
+<p class="sp-desc">Keeping critical systems healthy in a BFSI regulated environment where every minute of downtime has real consequences — from trading workstations to server rooms.</p>
+<div class="sp-items">
+<div class="sp-item">
+<span class="sp-item-n">01</span>
+<span class="sp-item-text">Windows Server, Active Directory &amp; Access Control</span>
+</div>
+<div class="sp-item">
+<span class="sp-item-n">02</span>
+<span class="sp-item-text">LAN/WAN, DNS/DHCP, Proxy &amp; Network Config</span>
+</div>
+<div class="sp-item">
+<span class="sp-item-n">03</span>
+<span class="sp-item-text">MS 365, Outlook/SMTP, cPanel, MoneyMaker</span>
+</div>
+</div>
+</div>
+</div>
+<div class="skill-card-stack">
+<div class="scs-left">
+<div class="scs-other">
+<div class="scs-other-title">Infrastructure &amp; Support</div>
+</div>
+<div class="scs-num">(02)</div>
+</div>
+<div class="scs-right">
+<p class="sp-label">Security &amp; Detection Engineering</p>
+<h3 class="sp-title">Security &amp;<br>Detection</h3>
+<p class="sp-desc">Building tools that catch threats before they become incidents. I work both sides — simulating attacks in controlled labs and engineering the detection rules that catch them.</p>
+<div class="sp-items">
+<div class="sp-item">
+<span class="sp-item-n">01</span>
+<span class="sp-item-text">Splunk SPL, ELK Stack — dashboards &amp; alert rules</span>
+</div>
+<div class="sp-item">
+<span class="sp-item-n">02</span>
+<span class="sp-item-text">Nmap, iptables, Endpoint Security, Firewall Monitoring</span>
+</div>
+<div class="sp-item">
+<span class="sp-item-n">03</span>
+<span class="sp-item-text">MITRE ATT&amp;CK Mapping, SIEM Rule Tuning &amp; FP Reduction</span>
+</div>
+</div>
+</div>
+</div>
+<div class="skill-card-stack">
+<div class="scs-left">
+<div class="scs-other">
+<div class="scs-other-title">Infrastructure &amp; Support</div>
+<div class="scs-other-title">Security &amp; Detection</div>
+</div>
+<div class="scs-num">(03)</div>
+</div>
+<div class="scs-right">
+<p class="sp-label">Development &amp; Scripting</p>
+<h3 class="sp-title">Development<br>&amp; Scripting</h3>
+<p class="sp-desc">Building functional tools that solve real operational problems — from a Python IDS that auto-blocks attackers to a full-stack asset management platform with enterprise-grade security.</p>
+<div class="sp-items">
+<div class="sp-item">
+<span class="sp-item-n">01</span>
+<span class="sp-item-text">Python — Flask, Pandas, Scapy, regex, file I/O</span>
+</div>
+<div class="sp-item">
+<span class="sp-item-n">02</span>
+<span class="sp-item-text">Bash Scripting, SQLite, REST API Integration</span>
+</div>
+<div class="sp-item">
+<span class="sp-item-n">03</span>
+<span class="sp-item-text">WSGI Deployment, 2FA TOTP, CSRF, Rate Limiting</span>
+</div>
+</div>
+</div>
+</div>
+<div class="skills-spacer">
+</div>
+</div>
+</section>
+<section id="resume-section">
+<div class="resume-inner rv">
+<div class="resume-text">
+<h2>My Resume</h2>
+<p>Download my full CV — experience, skills, education and projects in one place.</p>
+</div>
+<a href="resume.pdf" download="Abin_Kurian_Resume.pdf" class="resume-dl-btn">
+<svg viewBox="0 0 24 24">
+<path d="M12 16l-5-5 1.4-1.4 2.6 2.6V4h2v8.2l2.6-2.6L17 11l-5 5zm-6 4v-2h12v2H6z"/>
+</svg>Download Resume</a>
+</div>
+</section>
+<section id="contact" class="sec">
+<p class="sec-ey rv">Contact</p>
+<h2 class="ct-big rv d1">Have a project<br>in mind?<br>
+<a href="mailto:abin.kuriachan1@gmail.com">
+abin.kuriachan1@gmail.com
+</a>
+</h2>
+<div class="ct-grid">
+<div class="rv d2">
+<div class="cl">Email</div>
+<div class="cv" style="margin-bottom:14px">
+<a href="mailto:abin.kuriachan1@gmail.com" style="color:#6366f1;text-decoration:none">
+abin.kuriachan1@gmail.com
+</a>
+</div>
+<div class="cl">Phone</div>
+<div class="cv">+91 93727 47299</div>
+</div>
+<div class="rv d3">
+<div class="cl">Location</div>
+<div class="cv" style="margin-bottom:14px">Mumbai, Maharashtra, India</div>
+<div class="cl">Available for</div>
+<div class="cv">On-site &amp; Remote roles</div>
+</div>
+<div class="rv d4">
+<div class="cl">Social</div>
+<a href="https://github.com/Aby0705" target="_blank" class="clink">GitHub ↗</a>
+<a href="https://www.linkedin.com/in/abin-kurian/" target="_blank" class="clink">LinkedIn ↗</a>
+<a href="mailto:abin.kuriachan1@gmail.com" class="clink">Email ↗</a>
+</div>
+</div>
+<div class="ft rv d5">
+<span>Design &amp; built by <a href="#">Abin Kurian</a>
+</span>
+<span>© 2026</span>
+</div>
+</section>
+</main>
+</div>
+</script>
+<script>function goTo(id){var e=document.getElementById(id);if(e)e.scrollIntoView({behavior:'smooth'})}function toggleMobMenu(){var btn=document.getElementById('mobMenuBtn'),d=document.getElementById('mobDrawer');btn.classList.toggle('open');d.classList.toggle('open');document.body.style.overflow=d.classList.contains('open')?'hidden':'';}function closeMobMenu(){document.getElementById('mobMenuBtn').classList.remove('open');document.getElementById('mobDrawer').classList.remove('open');document.body.style.overflow='';}var cur=document.getElementById('cur'),ring=document.getElementById('cur-ring');var cx=window.innerWidth/2,cy=window.innerHeight/2,rx=cx,ry=cy;document.addEventListener('mousemove',function(e){cx=e.clientX;cy=e.clientY;cur.style.left=cx+'px';cur.style.top=cy+'px'});(function rl(){rx+=(cx-rx)*.1;ry+=(cy-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(rl)})();document.querySelectorAll('a,button').forEach(function(el){el.addEventListener('mouseenter',function(){ring.style.width='44px';ring.style.height='44px';ring.style.borderColor='rgba(99,102,241,.5)'});el.addEventListener('mouseleave',function(){ring.style.width='30px';ring.style.height='30px';ring.style.borderColor='rgba(0,0,0,.2)'});});var blobEl=document.getElementById('blob-svg');var blobPath=document.getElementById('blob-path');var bx=window.innerWidth/2,by=window.innerHeight/2;var btx=bx,bty=by;var blobAngle=0;document.addEventListener('mousemove',function(e){btx=e.clientX;bty=e.clientY});document.addEventListener('touchmove',function(e){var t=e.touches[0];btx=t.clientX;bty=t.clientY;},{passive:true});
+
+// -- INTRO SEQUENCE --
+window.addEventListener('load',function(){
+  setTimeout(function(){
+    document.getElementById('iw1').classList.add('up');
+    document.getElementById('iw2').classList.add('up');
+    document.getElementById('isub').classList.add('up');
+  },200);
+  setTimeout(function(){document.getElementById('intro').classList.add('exit')},1950);
+  setTimeout(function(){
+    document.getElementById('intro').classList.add('gone');
+    document.getElementById('layout').classList.add('show');
+    setTimeout(function(){document.getElementById('heroH').classList.add('go')},80);
+    setTimeout(function(){setTimeout(cycleRole,2800)},800);
+  },2750);
+});
+</script>
+</body>
+</html>
